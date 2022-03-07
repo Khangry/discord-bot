@@ -54,6 +54,7 @@ if (LOAD_SLASH) {
 }
 else {
     client.on("ready", () => {
+        client.user.setActivity('Anime with Khangry', { type: "PLAYING"})
         console.log(`Logged as: ${client.user.tag}`)
     })
     client.on("interactionCreate", (interaction) => {
